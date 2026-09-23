@@ -1,0 +1,5 @@
+{
+  "name": "GURBANOV Media Launcher",
+  "version": "1.0.0",
+  "parameter": "content:https://gurbanov-msx.vercel.app/index.json"
+}
