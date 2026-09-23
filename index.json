@@ -1,23 +1,82 @@
 {
-  "name": "GURBANOV LAUNCHER",
-  "version": "3.1.0",
-  "headline": "GURBANOV MEDIA",
-  "background": "https://gurbanov-msx.vercel.app/bg.jpg",
-  "items": [
-    {"title": "FILMS", "label": "Lampa", "action": "execute:webos:com.lampa.tv", "icon": "https://img.icons8.com/ios-filled/100/ffffff/clapperboard.png"},
-    {"title": "MUSIC", "label": "Spotify", "action": "execute:webos:spotify-beehive", "icon": "https://img.icons8.com/ios-filled/100/ffffff/headphones.png"},
-    {"title": "VIDEO", "label": "Видеосервисы", "action": "panel:video_select", "icon": "https://img.icons8.com/ios-filled/100/ffffff/video-camera.png"},
-    {"title": "TV", "label": "ICVA IPTV", "action": "execute:webos:icva", "icon": "https://img.icons8.com/ios-filled/100/ffffff/tv.png"},
-    {"title": "WEB", "label": "Браузер webOS", "action": "execute:webos:com.webos.app.browser", "icon": "https://img.icons8.com/ios-filled/100/ffffff/globe.png"},
-    {"title": "POWER OFF", "label": "Отключение ТВ", "action": "execute:webos:com.webos.app.poweroff", "icon": "https://img.icons8.com/ios-filled/100/ffffff/shutdown.png"}
-  ],
-  "panels": [
+  "name": "GURBANOV",
+  "version": "1.0.0",
+  "type": "pages",
+  "headline": "",
+  "background": "https://msx-c3ug.vercel.app/bg.jpg",
+  "transparent": true,
+  "compress": false,
+  "pages": [
     {
-      "name": "video_select",
-      "headline": "Выберите видеосервис",
+      "important": true,
+      "transparent": true,
       "items": [
-        {"title": "YouTube", "label": "YouTube AdFree", "action": "execute:webos:youtube.leanback.v4"},
-        {"title": "VK Video", "label": "VK Видео", "action": "execute:webos:vkvideo"}
+        {
+          "id": "films",
+          "type": "default",
+          "layout": "0,0,4,2",
+          "offset": "0.15,0.15,-0.3,-0.3",
+          "color": "transparent",
+          "round": false,
+          "headline": "",
+          "text": "",
+          "action": "system:lg:launch:com.lampa.tv"
+        },
+        {
+          "id": "music",
+          "type": "default",
+          "layout": "4,0,4,2",
+          "offset": "0.15,0.15,-0.3,-0.3",
+          "color": "transparent",
+          "round": false,
+          "headline": "",
+          "text": "",
+          "action": "system:lg:launch:com.4795741.189428"
+        },
+        {
+          "id": "video",
+          "type": "default",
+          "layout": "8,0,4,2",
+          "offset": "0.15,0.15,-0.3,-0.3",
+          "color": "transparent",
+          "round": false,
+          "headline": "",
+          "text": "",
+          "action": "menu:https://msx-c3ug.vercel.app/video.json"
+        },
+        {
+          "id": "tv",
+          "type": "default",
+          "layout": "0,4,4,2",
+          "offset": "0.15,-0.15,-0.3,0.3",
+          "color": "transparent",
+          "round": false,
+          "headline": "",
+          "text": "",
+          "action": "system:lg:launch:siptv"
+        },
+        {
+          "id": "web",
+          "type": "default",
+          "layout": "4,4,4,2",
+          "offset": "0.15,-0.15,-0.3,0.3",
+          "color": "transparent",
+          "round": false,
+          "headline": "",
+          "text": "",
+          "action": "system:lg:launch:com.webos.app.browser"
+        },
+        {
+          "id": "power",
+          "type": "default",
+          "layout": "8,4,4,2",
+          "offset": "0.15,-0.15,-0.3,0.3",
+          "color": "transparent",
+          "round": false,
+          "headline": "",
+          "text": "",
+          "action": "info:Power action"
+        }
       ]
     }
   ]
