@@ -1,17 +1,28 @@
 {
-  "name": "Video",
-  "version": "1.0.0",
+  "name": "GURBANOV VIDEO",
+  "version": "1.1.0",
+  "type": "pages",
   "headline": "VIDEO",
-  "menu": [
+
+  "pages": [
     {
-      "label": "YouTube",
-      "icon": "movie",
-      "action": "system:lg:launch:youtube.leanback.v4"
-    },
-    {
-      "label": "VK Video",
-      "icon": "play-circle",
-      "action": "system:lg:launch:vkvideo"
+      "important": true,
+      "items": [
+        {
+          "type": "default",
+          "layout": "2,1,8,2",
+          "title": "YouTube",
+          "icon": "youtube",
+          "action": "system:lg:launch:youtube.leanback.v4"
+        },
+        {
+          "type": "default",
+          "layout": "2,3,8,2",
+          "title": "VK Video",
+          "icon": "play-circle",
+          "action": "system:lg:launch:vkvideo"
+        }
+      ]
     }
   ]
 }
