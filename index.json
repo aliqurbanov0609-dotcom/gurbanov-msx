@@ -1,6 +1,6 @@
 {
   "name": "GURBANOV",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "type": "pages",
   "headline": "",
   "transparent": true,
@@ -28,7 +28,7 @@
         {
           "id": "brand",
           "type": "space",
-          "layout": "4,1.75,4,0.55",
+          "layout": "4,2,4,1",
           "color": "transparent",
           "headline": "GURBANOV",
           "alignment": "center",
@@ -38,41 +38,27 @@
         {
           "id": "clock",
           "type": "space",
-          "layout": "4,2.25,4,0.7",
+          "layout": "4,3,4,1",
           "color": "transparent",
-          "headline": "{num:now:time:HH:mm:ss}",
+          "headline": "{num:now:time:HH:mm}",
           "alignment": "center",
-          "centration": "text",
-          "live": {
-            "type": "airtime",
-            "duration": 315360000000,
-            "running": {
-              "headline": "{num:now:time:HH:mm:ss}"
-            }
-          }
+          "centration": "text"
         },
 
         {
           "id": "date",
           "type": "space",
-          "layout": "3.5,2.9,5,0.55",
+          "layout": "3,4,6,1",
           "color": "transparent",
-          "headline": "{num:now:formatter:day_full}",
+          "headline": "{num:now:date}",
           "alignment": "center",
-          "centration": "text",
-          "live": {
-            "type": "airtime",
-            "duration": 315360000000,
-            "running": {
-              "headline": "{num:now:formatter:day_full}"
-            }
-          }
+          "centration": "text"
         },
 
         {
           "id": "films",
           "type": "default",
-          "layout": "0,0,4,2.4",
+          "layout": "0,0,4,2",
           "offset": "0.15,0.15,-0.3,-0.3",
           "color": "transparent",
           "round": false,
@@ -84,7 +70,7 @@
         {
           "id": "music",
           "type": "default",
-          "layout": "4,0,4,2.4",
+          "layout": "4,0,4,2",
           "offset": "0.15,0.15,-0.3,-0.3",
           "color": "transparent",
           "round": false,
@@ -96,7 +82,7 @@
         {
           "id": "video",
           "type": "default",
-          "layout": "8,0,4,2.4",
+          "layout": "8,0,4,2",
           "offset": "0.15,0.15,-0.3,-0.3",
           "color": "transparent",
           "round": false,
@@ -108,7 +94,7 @@
         {
           "id": "tv",
           "type": "default",
-          "layout": "0,3.6,4,2.4",
+          "layout": "0,4,4,2",
           "offset": "0.15,-0.15,-0.3,0.3",
           "color": "transparent",
           "round": false,
@@ -120,7 +106,7 @@
         {
           "id": "web",
           "type": "default",
-          "layout": "4,3.6,4,2.4",
+          "layout": "4,4,4,2",
           "offset": "0.15,-0.15,-0.3,0.3",
           "color": "transparent",
           "round": false,
@@ -132,7 +118,7 @@
         {
           "id": "power",
           "type": "default",
-          "layout": "8,3.6,4,2.4",
+          "layout": "8,4,4,2",
           "offset": "0.15,-0.15,-0.3,0.3",
           "color": "transparent",
           "round": false,
