@@ -42,7 +42,7 @@
           "round": false,
           "headline": "",
           "text": "",
-          "action": "menu:https://gurbanov-msx.app/video.json"
+          "action": "menu:https://gurbanov-msx.vercel.app/video.json"
         },
         {
           "id": "tv",
