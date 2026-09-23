@@ -2,6 +2,7 @@
   "name": "GURBANOV LAUNCHER",
   "version": "3.1.0",
   "headline": "GURBANOV MEDIA",
+  "background": "https://gurbanov-msx.vercel.app/bg.jpg",
   "items": [
     {"title": "FILMS", "label": "Lampa", "action": "execute:webos:com.lampa.tv", "icon": "https://img.icons8.com/ios-filled/100/ffffff/clapperboard.png"},
     {"title": "MUSIC", "label": "Spotify", "action": "execute:webos:spotify-beehive", "icon": "https://img.icons8.com/ios-filled/100/ffffff/headphones.png"},
