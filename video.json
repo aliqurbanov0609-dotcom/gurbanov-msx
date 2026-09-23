@@ -1,0 +1,17 @@
+{
+  "name": "Video",
+  "version": "1.0.0",
+  "headline": "VIDEO",
+  "menu": [
+    {
+      "label": "YouTube",
+      "icon": "movie",
+      "action": "system:lg:launch:youtube.leanback.v4"
+    },
+    {
+      "label": "VK Video",
+      "icon": "play-circle",
+      "action": "system:lg:launch:vkvideo"
+    }
+  ]
+}
