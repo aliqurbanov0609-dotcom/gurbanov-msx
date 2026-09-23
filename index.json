@@ -1,0 +1,23 @@
+{
+  "name": "GURBANOV LAUNCHER",
+  "version": "3.1.0",
+  "headline": "GURBANOV MEDIA",
+  "items": [
+    {"title": "FILMS", "label": "Lampa", "action": "execute:webos:com.lampa.tv", "icon": "https://img.icons8.com/ios-filled/100/ffffff/clapperboard.png"},
+    {"title": "MUSIC", "label": "Spotify", "action": "execute:webos:spotify-beehive", "icon": "https://img.icons8.com/ios-filled/100/ffffff/headphones.png"},
+    {"title": "VIDEO", "label": "Видеосервисы", "action": "panel:video_select", "icon": "https://img.icons8.com/ios-filled/100/ffffff/video-camera.png"},
+    {"title": "TV", "label": "ICVA IPTV", "action": "execute:webos:icva", "icon": "https://img.icons8.com/ios-filled/100/ffffff/tv.png"},
+    {"title": "WEB", "label": "Браузер webOS", "action": "execute:webos:com.webos.app.browser", "icon": "https://img.icons8.com/ios-filled/100/ffffff/globe.png"},
+    {"title": "POWER OFF", "label": "Отключение ТВ", "action": "execute:webos:com.webos.app.poweroff", "icon": "https://img.icons8.com/ios-filled/100/ffffff/shutdown.png"}
+  ],
+  "panels": [
+    {
+      "name": "video_select",
+      "headline": "Выберите видеосервис",
+      "items": [
+        {"title": "YouTube", "label": "YouTube AdFree", "action": "execute:webos:youtube.leanback.v4"},
+        {"title": "VK Video", "label": "VK Видео", "action": "execute:webos:vkvideo"}
+      ]
+    }
+  ]
+}
