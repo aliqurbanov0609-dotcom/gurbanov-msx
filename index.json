@@ -1,20 +1,78 @@
 {
   "name": "GURBANOV",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "type": "pages",
   "headline": "",
-  "background": "https://gurbanov-msx.vercel.app/bg.jpg",
   "transparent": true,
   "compress": false,
+
   "pages": [
     {
       "important": true,
       "transparent": true,
+      "wrap": false,
+
       "items": [
+
+        {
+          "id": "background",
+          "type": "space",
+          "layout": "0,0,12,6",
+          "color": "transparent",
+          "image": "https://gurbanov-msx.vercel.app/bg.jpg",
+          "imageFiller": "cover",
+          "imagePreload": true,
+          "round": false
+        },
+
+        {
+          "id": "brand",
+          "type": "space",
+          "layout": "4,1.75,4,0.55",
+          "color": "transparent",
+          "headline": "GURBANOV",
+          "alignment": "center",
+          "centration": "text"
+        },
+
+        {
+          "id": "clock",
+          "type": "space",
+          "layout": "4,2.25,4,0.7",
+          "color": "transparent",
+          "headline": "{num:now:time:HH:mm:ss}",
+          "alignment": "center",
+          "centration": "text",
+          "live": {
+            "type": "airtime",
+            "duration": 315360000000,
+            "running": {
+              "headline": "{num:now:time:HH:mm:ss}"
+            }
+          }
+        },
+
+        {
+          "id": "date",
+          "type": "space",
+          "layout": "3.5,2.9,5,0.55",
+          "color": "transparent",
+          "headline": "{num:now:formatter:day_full}",
+          "alignment": "center",
+          "centration": "text",
+          "live": {
+            "type": "airtime",
+            "duration": 315360000000,
+            "running": {
+              "headline": "{num:now:formatter:day_full}"
+            }
+          }
+        },
+
         {
           "id": "films",
           "type": "default",
-          "layout": "0,0,4,2",
+          "layout": "0,0,4,2.4",
           "offset": "0.15,0.15,-0.3,-0.3",
           "color": "transparent",
           "round": false,
@@ -22,10 +80,11 @@
           "text": "",
           "action": "system:lg:launch:com.lampa.tv"
         },
+
         {
           "id": "music",
           "type": "default",
-          "layout": "4,0,4,2",
+          "layout": "4,0,4,2.4",
           "offset": "0.15,0.15,-0.3,-0.3",
           "color": "transparent",
           "round": false,
@@ -33,10 +92,11 @@
           "text": "",
           "action": "system:lg:launch:com.4795741.189428"
         },
+
         {
           "id": "video",
           "type": "default",
-          "layout": "8,0,4,2",
+          "layout": "8,0,4,2.4",
           "offset": "0.15,0.15,-0.3,-0.3",
           "color": "transparent",
           "round": false,
@@ -44,10 +104,11 @@
           "text": "",
           "action": "menu:https://gurbanov-msx.vercel.app/video.json"
         },
+
         {
           "id": "tv",
           "type": "default",
-          "layout": "0,4,4,2",
+          "layout": "0,3.6,4,2.4",
           "offset": "0.15,-0.15,-0.3,0.3",
           "color": "transparent",
           "round": false,
@@ -55,10 +116,11 @@
           "text": "",
           "action": "system:lg:launch:siptv"
         },
+
         {
           "id": "web",
           "type": "default",
-          "layout": "4,4,4,2",
+          "layout": "4,3.6,4,2.4",
           "offset": "0.15,-0.15,-0.3,0.3",
           "color": "transparent",
           "round": false,
@@ -66,17 +128,19 @@
           "text": "",
           "action": "system:lg:launch:com.webos.app.browser"
         },
+
         {
           "id": "power",
           "type": "default",
-          "layout": "8,4,4,2",
+          "layout": "8,3.6,4,2.4",
           "offset": "0.15,-0.15,-0.3,0.3",
           "color": "transparent",
           "round": false,
           "headline": "",
           "text": "",
-          "action": "info:Power action"
+          "action": "info:POWER OFF"
         }
+
       ]
     }
   ]
