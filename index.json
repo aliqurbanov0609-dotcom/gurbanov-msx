@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "type": "pages",
   "headline": "",
-  "background": "https://msx-c3ug.vercel.app/bg.jpg",
+  "background": "https://gurbanov-msx.vercel.app/bg.jpg",
   "transparent": true,
   "compress": false,
   "pages": [
@@ -42,7 +42,7 @@
           "round": false,
           "headline": "",
           "text": "",
-          "action": "menu:https://msx-c3ug.vercel.app/video.json"
+          "action": "menu:https://gurbanov-msx.app/video.json"
         },
         {
           "id": "tv",
