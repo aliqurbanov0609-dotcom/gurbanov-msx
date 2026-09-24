@@ -1,112 +1,144 @@
 {
   "name": "GURBANOV",
-  "version": "6.0.0",
+  "version": "3.0.0",
   "type": "pages",
-  "background": "https://gurbanov-msx.vercel.app/bg.jpg",
+  "headline": "",
+  "transparent": true,
+  "compress": false,
+  "dictionary": "https://msx.benzac.de/dic/ru.json",
+
   "pages": [
     {
-      "background": "https://gurbanov-msx.vercel.app/bg.jpg",
+      "important": true,
+      "transparent": true,
+
       "items": [
+
         {
-          "id": "films",
-          "type": "button",
-          "layout": "0,0,4,2",
+          "id": "background",
+          "type": "space",
+          "layout": "0,0,12,6",
           "color": "transparent",
-          "label": "",
-          "action": "system:lg:launch:com.lampa.tv"
+          "image": "https://gurbanov-msx.vercel.app/bg.jpg",
+          "imageFiller": "fit",
+          "imagePreload": true,
+          "round": false
         },
+
         {
-          "id": "music",
-          "type": "button",
-          "layout": "4,0,4,2",
+          "id": "brand",
+          "type": "space",
+          "layout": "4,2,4,1",
           "color": "transparent",
-          "label": "",
-          "action": "system:lg:launch:com.spotify.lg"
+          "headline": "GURBANOV",
+          "alignment": "center",
+          "centration": "text"
         },
-        {
-          "id": "video",
-          "type": "button",
-          "layout": "8,0,4,2",
-          "color": "transparent",
-          "label": "",
-          "action": "menu:https://gurbanov-msx.vercel.app/video.json"
-        },
+
         {
           "id": "clock",
           "type": "space",
-          "layout": "4,2,4,2",
+          "layout": "4,3,4,1",
           "color": "transparent",
-          "focus": false,
-          "headline": "19:30",
+          "headline": "00:00",
           "alignment": "center",
-          "action": "live",
-          "live": { "type": "clock", "action": "time:HH:mm" }
+          "centration": "text",
+
+          "live": {
+            "type": "airtime",
+            "duration": 315360000000,
+            "running": {
+              "headline": "{now:time:hh:mm}"
+            }
+          }
         },
+
         {
-          "id": "day",
+          "id": "date",
           "type": "space",
-          "layout": "1,2,2,1",
+          "layout": "3,4,6,1",
           "color": "transparent",
-          "focus": false,
+          "headline": "24.09.2026",
           "alignment": "center",
-          "headline": "24",
-          "action": "live",
-          "live": { "type": "clock", "action": "date:d" }
+          "centration": "text",
+
+          "live": {
+            "type": "airtime",
+            "duration": 315360000000,
+            "running": {
+              "headline": "{now:formatter:day_full}"
+            }
+          }
         },
+
         {
-          "id": "week",
-          "type": "space",
-          "layout": "1,3,2,1",
+          "id": "films",
+          "type": "button",
+          "layout": "1,3,2,2",
           "color": "transparent",
-          "focus": false,
-          "alignment": "center",
-          "action": "live",
-          "live": { "type": "clock", "action": "date:EEEE" }
+          "round": false,
+          "label": "",
+          "action": "system:lg:launch:com.lampa.tv"
         },
+
         {
-          "id": "year",
-          "type": "space",
-          "layout": "9,2,2,1",
+          "id": "music",
+          "type": "button",
+          "layout": "3,3,2,2",
           "color": "transparent",
-          "focus": false,
-          "alignment": "center",
-          "action": "live",
-          "live": { "type": "clock", "action": "date:yyyy" }
+          "round": false,
+          "label": "",
+          "action": "system:lg:launch:spotify-beehive"
         },
+
         {
-          "id": "month",
-          "type": "space",
-          "layout": "9,3,2,1",
+          "id": "video",
+          "type": "button",
+          "layout": "5,3,2,2",
           "color": "transparent",
-          "focus": false,
-          "alignment": "center",
-          "action": "live",
-          "live": { "type": "clock", "action": "date:MMMM" }
+          "round": false,
+          "label": "",
+          "action": "menu:https://gurbanov-msx.vercel.app/video.json"
         },
+
         {
           "id": "tv",
           "type": "button",
-          "layout": "0,4,4,2",
+          "layout": "7,3,2,2",
           "color": "transparent",
+          "round": false,
           "label": "",
-          "action": "system:lg:launch:com.lg.app.iptv"
+          "action": "system:lg:launch:icva"
         },
+
         {
           "id": "web",
           "type": "button",
-          "layout": "4,4,4,2",
+          "layout": "9,3,2,2",
           "color": "transparent",
+          "round": false,
           "label": "",
           "action": "system:lg:launch:com.webos.app.browser"
         },
+
         {
           "id": "power",
           "type": "button",
-          "layout": "8,4,4,2",
+          "layout": "5,0,2,2",
           "color": "transparent",
+          "round": false,
           "label": "",
-          "action": "system:lg:powerOff"
+
+          "action": "system:lg:launch:com.webos.app.factorywin",
+
+          "data": {
+            "properties": {
+              "id": "executeFactory",
+              "irKey": "powerOnly"
+            }
+          }
         }
+
       ]
     }
   ]
