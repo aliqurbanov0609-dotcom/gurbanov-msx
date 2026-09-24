@@ -1,13 +1,25 @@
 {
   "name": "GURBANOV VIDEO",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "type": "pages",
-  "headline": "VIDEO",
-
+  "headline": "Выберите сервис",
+  "transparent": true,
   "pages": [
     {
       "important": true,
+      "transparent": true,
+      "background": "https://gurbanov-msx.vercel.app/bg.jpg",
       "items": [
+        {
+          "id": "bg2",
+          "type": "space",
+          "layout": "0,0,12,6",
+          "color": "transparent",
+          "image": "https://gurbanov-msx.vercel.app/bg.jpg",
+          "imageFiller": "cover",
+          "imagePreload": true,
+          "focus": false
+        },
         {
           "type": "default",
           "layout": "2,1,8,2",
@@ -20,7 +32,7 @@
           "layout": "2,3,8,2",
           "title": "VK Video",
           "icon": "play-circle",
-          "action": "system:lg:launch:vkvideo"
+          "action": "system:lg:launch:com.vk.vkvideo"
         }
       ]
     }
