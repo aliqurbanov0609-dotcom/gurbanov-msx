@@ -1,6 +1,6 @@
 {
   "name": "GURBANOV",
-  "version": "5.0.0",
+  "version": "6.0.0",
   "type": "pages",
   "background": "https://gurbanov-msx.vercel.app/bg.jpg",
   "pages": [
@@ -9,23 +9,26 @@
       "items": [
         {
           "id": "films",
-          "type": "space",
+          "type": "button",
           "layout": "0,0,4,2",
           "color": "transparent",
+          "label": "",
           "action": "system:lg:launch:com.lampa.tv"
         },
         {
           "id": "music",
-          "type": "space",
+          "type": "button",
           "layout": "4,0,4,2",
           "color": "transparent",
+          "label": "",
           "action": "system:lg:launch:com.spotify.lg"
         },
         {
           "id": "video",
-          "type": "space",
+          "type": "button",
           "layout": "8,0,4,2",
           "color": "transparent",
+          "label": "",
           "action": "menu:https://gurbanov-msx.vercel.app/video.json"
         },
         {
@@ -37,29 +40,25 @@
           "headline": "19:30",
           "alignment": "center",
           "action": "live",
-          "live": {
-            "type": "clock",
-            "action": "time:HH:mm"
-          }
+          "live": { "type": "clock", "action": "time:HH:mm" }
         },
         {
-          "id": "day_num",
+          "id": "day",
           "type": "space",
           "layout": "1,2,2,1",
           "color": "transparent",
           "focus": false,
-          "headline": "24",
           "alignment": "center",
+          "headline": "24",
           "action": "live",
           "live": { "type": "clock", "action": "date:d" }
         },
         {
-          "id": "day_week",
+          "id": "week",
           "type": "space",
           "layout": "1,3,2,1",
           "color": "transparent",
           "focus": false,
-          "headline": "СРЕДА",
           "alignment": "center",
           "action": "live",
           "live": { "type": "clock", "action": "date:EEEE" }
@@ -70,7 +69,6 @@
           "layout": "9,2,2,1",
           "color": "transparent",
           "focus": false,
-          "headline": "2026",
           "alignment": "center",
           "action": "live",
           "live": { "type": "clock", "action": "date:yyyy" }
@@ -81,30 +79,32 @@
           "layout": "9,3,2,1",
           "color": "transparent",
           "focus": false,
-          "headline": "ЯНВАРЬ",
           "alignment": "center",
           "action": "live",
           "live": { "type": "clock", "action": "date:MMMM" }
         },
         {
           "id": "tv",
-          "type": "space",
+          "type": "button",
           "layout": "0,4,4,2",
           "color": "transparent",
+          "label": "",
           "action": "system:lg:launch:com.lg.app.iptv"
         },
         {
           "id": "web",
-          "type": "space",
+          "type": "button",
           "layout": "4,4,4,2",
           "color": "transparent",
+          "label": "",
           "action": "system:lg:launch:com.webos.app.browser"
         },
         {
           "id": "power",
-          "type": "space",
+          "type": "button",
           "layout": "8,4,4,2",
           "color": "transparent",
+          "label": "",
           "action": "system:lg:powerOff"
         }
       ]
